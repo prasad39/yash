@@ -1,0 +1,33 @@
+<ul class="navbar-nav mr-auto">
+
+	<li class="nav-item" routerLinkActive="active" (mouseover)="createPlanmenuTrigger.openMenu()"
+		(mouseout)="$event.stopPropagation();createPlanmenuTrigger.openMenu()">
+		<a class="nav-link" #createPlanmenuTrigger="matMenuTrigger" [matMenuTriggerFor]="createPlan">Sofas & Chairs</a>
+		<mat-menu #createPlan="matMenu">
+			<button mat-menu-item [routerLink]="['/plan/manual-plan']">Living Chairs
+			</button>
+			<button mat-menu-item [routerLink]="['/plan/create-plan']">Sofa</button>
+			<button mat-menu-item [routerLink]="['/plan/pending-plans']">storage</button>
+		</mat-menu>
+	</li>
+
+
+
+	<li class="nav-item" routerLinkActive="active" (mouseover)="dispatchPlanmenuTrigger.openMenu()">
+		<a class="nav-link" #dispatchPlanmenuTrigger="matMenuTrigger" [matMenuTriggerFor]="dispatchPlan">Dinning Room</a>
+		<mat-menu #dispatchPlan="matMenu">
+
+			<button mat-menu-item [routerLink]="['/dispatch-plan/view-plan']">Dining Tables</button>
+			<button mat-menu-item [routerLink]="['/dispatch-plan/modifiy-plan']">Dining Sets</button>
+			<button mat-menu-item [routerLink]="['/dispatch-plan/approve-plans']">Dining Chairs</button>
+		</mat-menu>
+	</li>
+
+	<!-- <li class="nav-item">
+        <a class="nav-link"></a>
+
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"></a>
+      </li> -->
+</ul>

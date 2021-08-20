@@ -1,0 +1,36 @@
+
+<div class="">
+    
+    <button mat-stroked-button  name="fontStyle" aria-label="Font Style" (click)="onShow()">
+        Catageories 
+    </button>
+      
+</div>
+<div class="Catageories" *ngIf="displayCat">
+    <div mat-list>
+       <a href="" *ngIf="shouldRun" ><div mat-list-item class="menu-button">Sofas & Chairs</div>
+         
+    
+        </a>  
+        <mat-divider></mat-divider>
+        <a href=""><div mat-list-item>Dinning Room</div></a>
+        <mat-divider></mat-divider>
+        <a href=""><div mat-list-item>Out Door Room</div></a>
+        <mat-divider></mat-divider>
+        <a href=""><div mat-list-item>Estilo</div></a>
+        <mat-divider></mat-divider>
+        <a href=""><div mat-list-item>Living Chairs</div></a>
+        <mat-divider></mat-divider>
+        <a href=""><div mat-list-item>New Sofas</div></a>
+        <mat-divider></mat-divider>
+        <a href=""><div mat-list-item>Sleigt Sofas</div></a>
+        <mat-divider></mat-divider>
+        <a href="" routerLink="/about"><div mat-list-item>About Us</div></a>
+        <mat-divider></mat-divider>
+        <a href="" routerLink="/legal-notice"><div mat-list-item>Legal Notice</div></a>
+    </div>
+</div>
+<div>
+    <router-outlet></router-outlet>
+</div>
+<div>

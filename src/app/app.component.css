@@ -1,0 +1,7 @@
+a{
+    padding: 5px;
+    text-decoration: none;
+}
+.navbar-nav{
+    flex: 1 1 auto;
+}
